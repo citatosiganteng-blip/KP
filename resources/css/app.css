@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    html { scroll-behavior: smooth; }
+    body { @apply bg-white text-slate-800 antialiased; }
+    h1,h2,h3,h4 { @apply font-bold tracking-tight text-primary; }
+}
+
+@layer components {
+    .btn-primary  { @apply inline-flex items-center justify-center rounded-full bg-primary px-6 py-3 text-sm font-semibold text-primary-foreground shadow-soft transition hover:scale-[1.03] hover:bg-primary-700; }
+    .btn-accent   { @apply inline-flex items-center justify-center rounded-full bg-accent px-6 py-3 text-sm font-semibold text-accent-foreground shadow-soft transition hover:scale-[1.03]; }
+    .btn-outline  { @apply inline-flex items-center justify-center rounded-full border-2 border-primary px-6 py-3 text-sm font-semibold text-primary transition hover:bg-primary hover:text-primary-foreground; }
+    .card         { @apply rounded-2xl border border-slate-200 bg-white p-6 shadow-soft transition hover:shadow-elegant; }
+    .section      { @apply py-16 md:py-24; }
+    .eyebrow      { @apply inline-block rounded-full bg-accent-soft px-3 py-1 text-xs font-semibold uppercase tracking-wider text-primary; }
+}
