@@ -25,14 +25,14 @@
 
             <div class="space-y-10">
                 <div>
-                    <span class="text-[#f5c542] font-bold tracking-widest uppercase text-sm border-b-2 border-[#f5c542] pb-1">Visi</span>
+                    <span class="text-[#f5c542] font-bold tracking-widest uppercase text-xl border-b-2 border-[#f5c542] pb-1">Visi</span>
                     <h2 class="mt-4 text-3xl font-extrabold text-[#1e3a8a] leading-tight italic">
                         "Unggul dalam layanan pembelajaran, kegiatan berwawasan islami, religius, nyaman, aman dan berkarakter"
                     </h2>
                 </div>
 
                 <div>
-                    <span class="text-[#f5c542] font-bold tracking-widest uppercase text-sm border-b-2 border-[#f5c542] pb-1">Misi</span>
+                    <span class="text-[#f5c542] font-bold tracking-widest uppercase text-xl border-b-2 border-[#f5c542] pb-1">Misi</span>
                     <ul class="mt-6 space-y-4">
                         @foreach ([
                             'Membangun karakter siswa melalui pendidikan formal, non-formal, dan wawasan kebangsaan.',
@@ -56,7 +56,7 @@
 {{-- 3. Keunggulan CIM School (Sesuai Brosur Foto 2) --}}
 <section class="py-24 bg-[#1e3a8a]">
     <div class="container mx-auto px-6 text-center text-white">
-        <h2 class="text-3xl md:text-4xl font-extrabold mb-12">Keunggulan <span class="text-[#f5c542]">CIM School</span></h2>
+        <h2 class="text-3xl md:text-4xl font-extrabold mb-12 text-white">Keunggulan <span class="text-[#f5c542]">CIM School</span></h2>
         
         <div class="grid gap-6 md:grid-cols-3">
             @php

@@ -70,7 +70,7 @@
 <section class="py-24 bg-gray-50">
     <div class="container mx-auto px-6">
         <div class="text-center max-w-2xl mx-auto mb-16">
-            <span class="text-[#f5c542] font-bold tracking-wider uppercase text-sm">Program Keahlian</span>
+            <span class="text-[#f5c542] font-bold tracking-wider uppercase text-xl">Program Keahlian</span>
             <h2 class="mt-2 text-3xl md:text-4xl font-extrabold text-[#1e3a8a]">Empat Jurusan Unggulan</h2>
             <p class="mt-4 text-gray-600">Disiapkan agar lulusan langsung siap kerja, berwirausaha, atau melanjutkan ke perguruan tinggi.</p>
         </div>
@@ -108,7 +108,7 @@
     <div class="container mx-auto px-6">
         <div class="flex justify-between items-end mb-12">
             <div>
-                <span class="text-[#f5c542] font-bold tracking-wider uppercase text-sm">Pengembangan Diri</span>
+                <span class="text-[#f5c542] font-bold tracking-wider uppercase text-xl">Pengembangan Diri</span>
                 <h2 class="mt-2 text-3xl md:text-4xl font-extrabold text-[#1e3a8a]">Intra & Ekstrakurikuler</h2>
             </div>
             <div class="hidden md:block text-gray-500 text-sm italic">
