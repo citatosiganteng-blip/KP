@@ -8,3 +8,4 @@ Route::view('/program',   'pages.program')->name('program');
 Route::view('/kesiswaan', 'pages.kesiswaan')->name('kesiswaan');
 Route::view('/ppdb',      'pages.ppdb')->name('ppdb');
 Route::view('/kontak',    'pages.kontak')->name('kontak');
+Route::view('/event',     'pages.event')->name('event');

@@ -1,12 +1,12 @@
-<footer class="bg-[#1e3a8a] text-white mt-24">
-    <div class="container mx-auto px-4 lg:px-8 py-14 grid gap-10 md:grid-cols-4">
-        <div class="md:col-span-2">
-            <div class="flex items-center gap-4 mb-4">
-                <div class="flex h-14 w-14 items-center justify-center rounded-xl bg-white p-1.5 shadow-sm">
+<footer class="bg-[#1e3a8a] text-white mt-12 md:mt-24">
+    <div class="container mx-auto px-4 lg:px-8 py-8 md:py-14 grid gap-8 md:gap-10 sm:grid-cols-2 md:grid-cols-4">
+        <div class="sm:col-span-2 md:col-span-2">
+            <div class="flex items-center gap-3 md:gap-4 mb-3 md:mb-4">
+                <div class="flex h-10 w-10 md:h-14 md:w-14 items-center justify-center rounded-xl bg-white p-1 md:p-1.5 shadow-sm">
                     <img src="{{ asset('images/logoSMK.png') }}" alt="Logo SMKS CIM" class="h-full w-full object-contain">
                 </div>
                 <div>
-                    <p class="font-bold text-lg tracking-wide">SMKS Cipta Insani Mandiri</p>
+                    <p class="font-bold text-base md:text-lg tracking-wide">SMKS Cipta Insani Mandiri</p>
                     <p class="text-xs text-[#f5c542] font-semibold tracking-wider uppercase mt-0.5">Terakreditasi A</p>
                 </div>
             </div>
@@ -16,7 +16,7 @@
         </div>
         
         <div>
-            <h4 class="font-bold mb-4 text-[#f5c542] text-lg tracking-wide">Navigasi</h4>
+            <h4 class="font-bold mb-3 md:mb-4 text-[#f5c542] text-base md:text-lg tracking-wide">Navigasi</h4>
             <ul class="space-y-2 text-sm text-gray-300">
                 <li><a href="{{ route('profil') }}" class="hover:text-[#f5c542] transition-colors duration-200 flex items-center gap-2"><span class="text-[10px]">▶</span> Profil Sekolah</a></li>
                 <li><a href="{{ route('program') }}" class="hover:text-[#f5c542] transition-colors duration-200 flex items-center gap-2"><span class="text-[10px]">▶</span> Program Keahlian</a></li>
@@ -26,7 +26,7 @@
         </div>
         
         <div>
-            <h4 class="font-bold mb-4 text-[#f5c542] text-lg tracking-wide">Kontak</h4>
+            <h4 class="font-bold mb-3 md:mb-4 text-[#f5c542] text-base md:text-lg tracking-wide">Kontak</h4>
             <ul class="space-y-3 text-sm text-gray-300">
                 <li class="flex gap-3 items-start">
                     <span class="mt-0.5">📍</span> 
@@ -37,8 +37,12 @@
                     <a href="https://wa.me/6285777119248" class="hover:text-[#f5c542] transition-colors duration-200">0857-7711-9248</a>
                 </li>
                 <li class="flex gap-3 items-center">
-                    <span>📷</span> 
-                    <a href="https://instagram.com/smkcimdepok" class="hover:text-[#f5c542] transition-colors duration-200" target="_blank">@smkcimdepok</a>
+                    <span>📷</span>
+                    <a href="https://instagram.com/smkcimdepok" target="_blank" class="hover:text-[#f5c542] transition-colors duration-200">@smkcimdepok</a>
+                </li>
+                <li class="flex gap-3 items-center">
+                    <span>📧</span>
+                    <a href="mailto:info@smkcim.sch.id" class="hover:text-[#f5c542] transition-colors duration-200">info@smkcim.sch.id</a>
                 </li>
             </ul>
         </div>

@@ -28,7 +28,7 @@ export default {
                 },
             },
             fontFamily: {
-                sans: ['Inter', 'ui-sans-serif', 'system-ui', 'sans-serif'],
+                sans: ['Poppins', 'ui-sans-serif', 'system-ui', 'sans-serif'],
             },
             backgroundImage: {
                 'gradient-hero': 'linear-gradient(135deg,#3b1d6b 0%,#5a2c8f 60%,#7b4cb8 100%)',

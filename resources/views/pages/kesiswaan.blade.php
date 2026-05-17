@@ -4,10 +4,10 @@
 
 @section('content')
 {{-- 1. Hero Kesiswaan --}}
-<section class="relative bg-[#1e3a8a] text-white py-24 overflow-hidden">
+<section class="relative bg-[#1e3a8a] text-white py-14 md:py-24 overflow-hidden">
     <div class="absolute inset-0 opacity-20" style="background-image: radial-gradient(circle at 50% -20%, #f5c542 0%, transparent 70%);"></div>
-    <div class="container relative mx-auto px-6 text-center z-10">
-        <h1 class="text-4xl md:text-5xl font-extrabold tracking-tight mb-4 text-[#f5c542]">Kesiswaan</h1>
+    <div class="container relative mx-auto px-4 md:px-6 text-center z-10">
+        <h1 class="text-3xl md:text-5xl font-extrabold tracking-tight mb-4 text-[#f5c542]">Kesiswaan</h1>
         <p class="text-lg md:text-xl text-gray-200 max-w-2xl mx-auto font-light leading-relaxed">
             Membentuk karakter siswa melalui kegiatan intra dan ekstrakurikuler serta kemitraan strategis untuk mendukung minat dan bakat.
         </p>
@@ -15,8 +15,8 @@
 </section>
 
 {{-- 2. Intra & Ekstrakurikuler (Grid dengan Foto) --}}
-<section class="py-24 bg-white">
-    <div class="container mx-auto px-6">
+<section class="py-14 md:py-24 bg-white">
+    <div class="container mx-auto px-4 md:px-6">
         <div class="text-center max-w-2xl mx-auto mb-16">
             <span class="text-[#f5c542] font-bold tracking-wider uppercase text-sm">Pengembangan Diri</span>
             <h2 class="mt-2 text-3xl md:text-4xl font-extrabold text-[#1e3a8a]">Intra & Ekstrakurikuler</h2>
@@ -41,9 +41,14 @@
                 <div class="group cursor-pointer rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 border border-gray-100 bg-gray-50 relative">
                     <div class="h-56 overflow-hidden bg-gray-200">
                         @if($ekskul['img'])
-                            <img src="{{ asset('images/' . $ekskul['img']) }}" alt="{{ $ekskul['nama'] }}" class="w-full h-full object-cover group-hover:scale-110 group-hover:rotate-1 transition-transform duration-500">
+                            <img src="{{ asset('images/' . $ekskul['img']) }}" alt="{{ $ekskul['nama'] }}" loading="lazy" class="w-full h-full object-cover group-hover:scale-110 group-hover:rotate-1 transition-transform duration-500">
                         @else
-                            <img src="https://placehold.co/400x300/1e3a8a/f5c542?text=Foto\n{{ $ekskul['nama'] }}" alt="{{ $ekskul['nama'] }}" class="w-full h-full object-cover group-hover:scale-110 group-hover:rotate-1 transition-transform duration-500">
+                            <div class="w-full h-full bg-gradient-to-br from-[#1e3a8a] to-[#3b5fc0] flex flex-col items-center justify-center gap-3">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.2" stroke="#f5c542" class="w-14 h-14 opacity-80">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 0 1 2.25-2.25h13.5A2.25 2.25 0 0 1 21 7.5v11.25m-18 0A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75m-18 0v-7.5A2.25 2.25 0 0 1 5.25 9h13.5A2.25 2.25 0 0 1 21 11.25v7.5"/>
+                                </svg>
+                                <span class="text-[#f5c542] text-xs font-semibold opacity-70">Segera Hadir</span>
+                            </div>
                         @endif
                     </div>
                     <div class="absolute inset-0 bg-gradient-to-t from-[#1e3a8a]/90 via-[#1e3a8a]/20 to-transparent flex items-end p-6">
@@ -56,8 +61,8 @@
 </section>
 
 {{-- 3. Kemitraan dan Kerjasama (Sesuai Brosur) --}}
-<section class="py-24 bg-gray-50">
-    <div class="container mx-auto px-6">
+<section class="py-14 md:py-24 bg-gray-50">
+    <div class="container mx-auto px-4 md:px-6">
         <div class="text-center max-w-2xl mx-auto mb-16">
             <span class="text-[#f5c542] font-bold tracking-wider uppercase text-sm">Relasi Institusi</span>
             <h2 class="mt-2 text-3xl md:text-4xl font-extrabold text-[#1e3a8a]">Kemitraan dan Kerjasama</h2>
